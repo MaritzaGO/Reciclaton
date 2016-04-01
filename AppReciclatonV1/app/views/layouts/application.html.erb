@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AppReciclatonV1</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if user_signed_in? %>
+  <li>
+  	<p>Bienvenid@ <%= current_user.name%></p><p><%= current_user.lastname%></p>
+  <%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %>        
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Iniciar sesión', new_user_session_path, class: "btn btn-primary") %>
+  </li>
+<% end %>
+
+
+
+
+<%= yield %>
+
+</body>
+</html>

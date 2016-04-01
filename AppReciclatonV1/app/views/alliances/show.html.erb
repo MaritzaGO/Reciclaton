@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client supplier:</strong>
+  <%= @alliance.client_supplier_id %>
+</p>
+
+<p>
+  <strong>Client recipient:</strong>
+  <%= @alliance.client_recipient_id %>
+</p>
+
+<p>
+  <strong>Supply:</strong>
+  <%= @alliance.supply_id %>
+</p>
+
+<p>
+  <strong>Demand:</strong>
+  <%= @alliance.demand_id %>
+</p>
+
+<p>
+  <strong>Agreed quantity:</strong>
+  <%= @alliance.agreed_quantity %>
+</p>
+
+<%= link_to 'Edit', edit_alliance_path(@alliance) %> |
+<%= link_to 'Back', alliances_path %>

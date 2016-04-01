@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_redidue: MyString
+  category_id: MyString
+  available_quantity: MyString
+
+two:
+  name_redidue: MyString
+  category_id: MyString
+  available_quantity: MyString

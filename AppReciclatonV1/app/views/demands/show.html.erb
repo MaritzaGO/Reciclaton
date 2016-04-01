@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @demand.client_id %>
+</p>
+
+<p>
+  <strong>Residue:</strong>
+  <%= @demand.residue_id %>
+</p>
+
+<p>
+  <strong>Demanded monthly quantity:</strong>
+  <%= @demand.demanded_monthly_quantity %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @demand.state %>
+</p>
+
+<%= link_to 'Edit', edit_demand_path(@demand) %> |
+<%= link_to 'Back', demands_path %>

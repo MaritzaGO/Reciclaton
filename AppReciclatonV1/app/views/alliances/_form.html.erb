@@ -1,0 +1,37 @@
+<%= form_for(@alliance) do |f| %>
+  <% if @alliance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alliance.errors.count, "error") %> prohibited this alliance from being saved:</h2>
+
+      <ul>
+      <% @alliance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :client_supplier_id %><br>
+    <%= f.text_field :client_supplier_id %>
+  </div>
+  <div class="field">
+    <%= f.label :client_recipient_id %><br>
+    <%= f.text_field :client_recipient_id %>
+  </div>
+  <div class="field">
+    <%= f.label :supply_id %><br>
+    <%= f.text_field :supply_id %>
+  </div>
+  <div class="field">
+    <%= f.label :demand_id %><br>
+    <%= f.text_field :demand_id %>
+  </div>
+  <div class="field">
+    <%= f.label :agreed_quantity %><br>
+    <%= f.text_field :agreed_quantity %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

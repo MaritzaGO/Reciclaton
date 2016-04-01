@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name redidue:</strong>
+  <%= @residue.name_redidue %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @residue.category_id %>
+</p>
+
+<p>
+  <strong>Available quantity:</strong>
+  <%= @residue.available_quantity %>
+</p>
+
+<%= link_to 'Edit', edit_residue_path(@residue) %> |
+<%= link_to 'Back', residues_path %>

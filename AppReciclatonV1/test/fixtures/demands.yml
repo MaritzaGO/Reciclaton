@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client_id: MyString
+  residue_id: MyString
+  demanded_monthly_quantity: MyString
+  state: 1
+
+two:
+  client_id: MyString
+  residue_id: MyString
+  demanded_monthly_quantity: MyString
+  state: 1

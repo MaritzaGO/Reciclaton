@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @supply.client_id %>
+</p>
+
+<p>
+  <strong>Residue:</strong>
+  <%= @supply.residue_id %>
+</p>
+
+<p>
+  <strong>Supplied monthly quantity:</strong>
+  <%= @supply.supplied_monthly_quantity %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @supply.stock %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @supply.state %>
+</p>
+
+<%= link_to 'Edit', edit_supply_path(@supply) %> |
+<%= link_to 'Back', supplies_path %>
