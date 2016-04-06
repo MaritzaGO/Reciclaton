@@ -4,25 +4,122 @@
   <title>AppReciclatonV1</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Reciclatón</title>
+   
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- Fixed navbar -->
+  <div class= "row">
+    <nav class="navbar navbar-default main-bar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="<%= root_path %>">Reciclatón</a>
+        </div>
+        <div id="navbar" class="navbar-collapse navbar-left collapse">
+          <ul class="nav main-bar navbar-nav  ">
+           
+            <li><a href="<%= compra_venta_path %>">Compra/Venta Residuos</a></li>
+            <li><a href="<%= l_reciclaje_path %>">Líneas de reciclaje</a></li>
+            <li><a href="<%= red_reciclatones_path %>">Red de reciclatones</a></li>
+            <li><a href="<%= nosotros_path %>">Nosotros</a></li>
+            <li><a href="<%= contactenos_path %>">Contáctenos</a></li>
+            <li class="dropdown">
+              <a href="<%= camp_sens_path %>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Campaña de sensibilizacion <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Tips de reciclaje</a></li>
+                <li><a href="#">Clases presenciales</a></li>
+                <li><a href="#">Clases virtuales</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Otros</li>
+                <li><a href="#">Puntos de reciclaje inteligente</a></li>
 
-<% if user_signed_in? %>
-  <li>
-  	<p>Bienvenid@ <%= current_user.name%></p><p><%= current_user.lastname%></p>
-  <%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %>        
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Iniciar sesión', new_user_session_path, class: "btn btn-primary") %>
-  </li>
-<% end %>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+        <ul class="nav navbar-nav navbar-right">
+          <% if client_signed_in? %>
+            <li>
+              <p>Bienvenid@ <%= current_client.name_complet%></p>
+            <%= link_to('Cerrar sesión', destroy_client_session_path, :method => :delete) %>        
+            </li>
+          <% else %>
+            <li>
+            <%= link_to('Iniciar sesión', new_client_session_path) %>
+            </li>
+          <% end %>
+        </ul>
+        </div>
+    </nav>
+
+  </div>
+
+  <div class= "row">
+  <div class= "container">
+    <div class="col-md-3 col-md-offset-9" style="margin-bottom: 25px;" >
+      <%= form_tag () do %>
+      <div class="input-group">
+        <%= text_field_tag :search , nil, placeholder: "Buscar en la pagina", class: "form-control" %>
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Buscar!</button>
+        </span>
+      </div><!-- /input-group -->
+      <% end %>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  </div>
+
+
+    
 
 
 
 
-<%= yield %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <%= yield %>   
+   
 
 </body>
 </html>

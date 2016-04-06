@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :clients
   resources :alliances
   resources :supplies
@@ -8,7 +10,18 @@ Rails.application.routes.draw do
   resources :categories
   resources :clients
 
-  root to: "clients#index"
+  root to: "home#indexreciclaton"
+
+  post '/send', to: 'home#enviar_correo', as: :send_email
+
+  
+  get '/compra_venta', to: 'home#compra_venta', as: :compra_venta
+  get '/l_reciclaje', to: 'home#l_reciclaje', as: :l_reciclaje
+  get '/red_reciclatones', to: 'home#red_reciclatones', as: :red_reciclatones
+  get '/nosotros', to: 'home#nosotros', as: :nosotros
+  get '/contactenos', to: 'home#contactenos', as: :contactenos
+  get '/camp_sens', to: 'home#camp_sens', as: :camp_sens
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

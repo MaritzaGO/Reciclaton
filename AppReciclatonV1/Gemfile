@@ -19,7 +19,7 @@ gem "letter_opener", :group => :development
 #Framework portal administrativo
 gem 'activeadmin', '~> 1.0.0.pre2' 
 
-gem 'devise', '~>4.0.0.rc2'
+gem 'devise'
 
 gem 'carrierwave'
 

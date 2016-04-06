@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <%= image_tag 'PV.jpg', class: 'image-carousel' %>
+          </div>
+          <div class="item">
+            <%= image_tag 'TIP.jpg', class: 'image-carousel' %>
+          </div>
+          <div class="item">
+            <%= image_tag 'recycle-symbol.jpg', class: 'image-carousel' %>
+          
+          <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <div class="col-md-6">
+      <div class="separator">
+        <h3>Recicle tips</h3>
+      </div>
+      
+      <section class="crazy-boxes">
+        <div class="crazy-box box1">
+          <p>¿Sabe usted que hacen con los residuos que usted recicla?</p>
+        </div>
+
+        <div class="crazy-box box2">
+          <p>¿En el momento de reciclar un residuo sabe usted con seguridad donde depositarlo?</p>
+        </div>
+
+        <div class="crazy-box box3">
+          <p>¿?</p>
+        </div>
+      </section><!-- end crazy-boxes -->
+
+
+      <div class="separator">
+        <span>Recicle inteligente y consciente</span>
+      </div>
+    </div>
+
+
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+
+
+
+
+    <div class= "container">
+      <div class="page-header">
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%">35% Complete</div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%">20% Complete</span></div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%">5% Complete (danger)</div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+<!-- Para enviar correos desde la app-->
+<!--<%= form_tag '/send' do %>
+  
+  <div>
+    <%= label_tag :asunto %>
+    <%= text_field_tag :asunto %>
+  </div>
+
+  <div>
+    <%= label_tag :contenido %>
+    <%= text_field_tag :contenido %>
+  </div>
+
+  <div>
+    <%= submit_tag :enviar %>
+  </div>
+
+<% end %> -->
+
+
+<!-- <%= link_to "Enviar correo", send_email_path, method: :post %> -->

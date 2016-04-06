@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.  
+ *
+ *= require_tree 
+ *= require_self
+ *= require bootstrap_and_overrides
+ */
+
+a {
+	text-decoration: none !important;
+}
+
+.main-bar {
+	background-color: #41924B;
+	color: white;
+}
+.main-bar .navbar-header a {
+	color:white;
+}
+
+#navbar .main-bar > li > a {
+	color: white;
+} 	
+
+.main-bar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	background: #003300;
+}
+.main-bar .navbar-right li{
+	background: #7DE369 ;
+	
+}
+.main-bar .navbar-right li > a{
+
+	color: #0000c9;
+}
+
+.carousel-inner > .item{
+	text-align: center;
+}
+
+.image-carousel{
+  display: inline !important;
+  height: 325px;
+  max-height: 325px;
+}
+
+.separator{
+  text-align: center;
+  line-height: 50px;
+  background: #FFCC00;
+  color: #FF0000;
+  text-transform: uppercase;
+  box-shadow: inset 0px 0px 3px 2px #0B3E68;
+  text-shadow: 1px 1px 1px #000;
+  h3{
+  	margin-top: 0;
+  }
+}
+
+.crazy-boxes{
+  overflow-y: scroll;
+  height: 238px;
+}
+
+.crazy-box{
+  background: rgba(0, 80, 255, 0.26);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 1px 2px 3px 0px #626262;
+  margin-bottom: 20px;
+}
+
+.crazy-box p{
+  line-height: 24px;
+  text-align: justify;
+}
+
