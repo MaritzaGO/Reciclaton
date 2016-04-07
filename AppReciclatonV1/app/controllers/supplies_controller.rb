@@ -28,7 +28,7 @@ class SuppliesController < ApplicationController
 
     respond_to do |format|
       if @supply.save
-        format.html { redirect_to @supply, notice: 'Supply was successfully created.' }
+        format.html { redirect_to @supply, notice: 'Oferta creada con exito' }
         format.json { render :show, status: :created, location: @supply }
       else
         format.html { render :new }

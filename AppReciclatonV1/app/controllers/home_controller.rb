@@ -5,6 +5,8 @@ def index
 end
 
 def compra_venta
+	@supplies = Supply.all
+	@demands = Demand.all
 end
 
 def l_reciclaje

@@ -1,0 +1,77 @@
+<div class="container">
+<div class= "row">
+<div class="col-md-6">
+
+<div>
+  <label> <%= link_to 'Crear nueva oferta', new_demand_path, class: "btn btn-primary btn-lg btn-block estiloboton" %> </label> <br>
+</div>
+
+<label>Ofertas</label>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Residuo ofertado</th>
+      <th>Cantidad mensual ofertada</th>
+      <th>Stock</th>
+      <th>Estado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @supplies.each do |supply| %>
+      <tr>
+        <td><%= supply.client_id %></td>
+        <td><%= supply.residue_id %></td>
+        <td><%= supply.supplied_monthly_quantity %></td>
+        <td><%= supply.stock %></td>
+        <td><%= supply.state %></td>
+        <td><%= link_to 'Show', supply %></td>
+        <td><%= link_to 'Edit', edit_supply_path(supply) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+
+
+
+<div class="col-md-6">
+
+<div>
+  <label><%= link_to 'Crear nueva demanda', new_demand_path, class: "btn btn-primary btn-lg btn-block estiloboton" %></label> <br>
+</div>
+
+<label>Demandas</label>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Residuo demandado</th>
+      <th>Cantidad mensual demandada</th>
+      <th>Estado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @demands.each do |demand| %>
+      <tr>
+        <td><%= demand.client_id %></td>
+        <td><%= demand.residue_id %></td>
+        <td><%= demand.demanded_monthly_quantity %></td>
+        <td><%= demand.state %></td>
+        <td><%= link_to 'Show', supply %></td>
+        <td><%= link_to 'Edit', edit_supply_path(supply) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+</div>
+</div>

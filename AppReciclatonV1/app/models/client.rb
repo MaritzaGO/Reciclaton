@@ -10,6 +10,6 @@ class Client < ActiveRecord::Base
 	has_many :alliances_recipient, class_name: 'Alliance', foreign_key: "client_recipient_id"
 
 
-	mount_uploader :profile_photo, ProfilePhotoUploader
+	mount_uploader :avatar, ProfilePhotoUploader
 
 end

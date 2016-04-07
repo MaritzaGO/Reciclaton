@@ -15,6 +15,11 @@
  *= require bootstrap_and_overrides
  */
 
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+}
+
 a {
 	text-decoration: none !important;
 }
@@ -33,13 +38,14 @@ a {
 
 .main-bar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 	background: #003300;
+  font-family: 'Fjalla One', sans-serif;
 }
 .main-bar .navbar-right li{
 	background: #7DE369 ;
 	
 }
 .main-bar .navbar-right li > a{
-
+  font-family: 'Fjalla One', sans-serif;
 	color: #0000c9;
 }
 
@@ -82,5 +88,20 @@ a {
 .crazy-box p{
   line-height: 24px;
   text-align: justify;
+  color: darkblue;
 }
 
+
+.final footer{
+text-align: center;
+font-family: 'Fjalla One', cursive;
+}
+
+.estiloboton {
+
+font-family: 'Fjalla One', sans-serif;
+color: #2C6700;
+background:#FFCF79;
+text-align: center;
+
+}
