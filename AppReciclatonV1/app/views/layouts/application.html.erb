@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AppReciclatonV1</title>
+  <title>AppReciclaton</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
@@ -12,6 +12,28 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
+
+
+<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      
+    <![endif]-->
+
+
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+
   <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
@@ -26,6 +48,9 @@
 
   <%= csrf_meta_tags %>
 </head>
+
+
+
 <body>
   <!-- Fixed navbar -->
   <div class= "row">
@@ -60,8 +85,6 @@
           </ul>
         </div><!--/.nav-collapse -->
 
-    <div class= "row">
-      <div class= "container">
         <ul class="nav navbar-nav navbar-right">
           <% if client_signed_in? %>
             <li>
@@ -72,44 +95,45 @@
             <li>
             <%= link_to('Iniciar sesión', new_client_session_path) %>
             </li>
+      
+            <li>
+            <%= link_to('Soy nuevo usuario', new_client_registration_path)%>
+            </li>
+      
+
           <% end %>
         </ul>
       </div>
-    </div>
-    
     </nav>
-
   </div>
 
   <div class= "row">
-  <div class= "container">
-    <div class="col-md-3 col-md-offset-9" style="margin-bottom: 25px;" >
-      <%= form_tag () do %>
-      <div class="input-group">
-        <%= text_field_tag :search , nil, placeholder: "Buscar en la pagina", class: "form-control" %>
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Buscar!</button>
-        </span>
-      </div><!-- /input-group -->
-      <% end %>
-    </div><!-- /.col-lg-6 -->
+    <div class= "container">
+      <div class="col-md-3 col-md-offset-9 search" >
+        <%= form_tag () do %>
+          <div class="input-group">
+            <%= text_field_tag :search , nil, placeholder: "Buscar en la pagina", class: "form-control" %>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Buscar!</button>
+            </span>
+          </div><!-- /input-group -->
+        <% end %>
+      </div><!-- /.col-lg-6 -->
+    </div>
   </div>
-  </div>
+
+<!--     
+<div class="container">
+  
+<canvas style="position: absolute; width: 190px; height: 73px;" __jx__id="___$_27__bubble_vector ___$_27__bubble_vector" height="73" width="190"></canvas>
 
 
-    
+<div __jx__id="___$_28" class="jx_ui_Widget bubble_text_wrapper"><div title="Close" __jx__id="___$_27__close ___$_27__close" class="meshim_widget_widgets_IconFont icon_font close" style="-moz-user-select: none;">✖</div><div __jx__id="___$_27__bubble_title_container" class="jx_ui_Widget bubble_title">Tiene preguntas?</div><div __jx__id="___$_27__bubble_text_container" class="jx_ui_Widget bubble_text">Dar click para chatear con nosotros</div></div>
+
+<div __jx__id="___$_29 ___$_29" class="meshim_widget_components_chatButton_Button ltr" style=""><div __jx__id="___$_29__button_bar ___$_29__button_bar" class="meshim_widget_components_chatButton_ButtonBar button_bar"><div __jx__id="___$_30 ___$_30" class="meshim_widget_widgets_Favicon favicon"><img style="display: none;" __jx__id="___$_30__image" class="custom_icon jx_ui_Image"><div __jx__id="___$_30__icon ___$_30__icon" class="meshim_widget_widgets_IconFont icon_font default_icon default_icon_online" style="-moz-user-select: none;">💬</div><div __jx__id="___$_31" class="dots_container jx_ui_Widget"><div __jx__id="___$_30__dots" style="-moz-user-select: none; display: none;" class="dots jx_ui_Widget"></div></div></div><div __jx__id="___$_32" class="button_text jx_ui_Widget"><div __jx__id="___$_33" class="blinds blinds_top jx_ui_Widget"><label style="-moz-user-select: none;" __jx__id="___$_29__button_bar__status_text_wrapper" class="status jx_ui_Label"><label style="-moz-user-select: none;" __jx__id="___$_29__button_bar__status_text" class="jx_ui_Label">Chat</label><label style="-moz-user-select: none;" __jx__id="___$_34" class="jx_ui_Label"> - </label></label><label style="-moz-user-select: none;" __jx__id="___$_29__button_bar__greeting" class="greeting jx_ui_Label">Online</label></div><div __jx__id="___$_35" class="blinds blinds_bottom jx_ui_Widget"><label style="-moz-user-select: none;" __jx__id="___$_29__button_bar__unread" class="jx_ui_Label">XX Nuevos mensajes</label></div></div><div __jx__id="___$_36 ___$_36" class="border_overlay meshim_widget_widgets_BorderOverlay"></div></div></div>
 
 
-
-
-
-
-
-
-
-
-
-
+</div> -->
 
 
 
@@ -117,24 +141,26 @@
 
 
 
-    
+  
 
 
+<div class= "final">
+  <footer>
+    Reciclatón Copyright &copy; 2016
+  </footer>
+</div>
 
 
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
 
 
-
-  <%= yield %>   
+    <%= yield %>   
    
 
 </body>
 </html>
-
-<div class="container">
-  <div class= "final">
-    <footer>
-      Reciclatón Copyright &copy; 2016
-    </footer>
-  </div>
-</div>

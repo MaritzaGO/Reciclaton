@@ -10,6 +10,7 @@ def compra_venta
 end
 
 def l_reciclaje
+	@categories = Category.all
 end
 
 def red_reciclatones
@@ -22,6 +23,10 @@ def contactenos
 end
 
 def camp_sens
+end
+
+def operacion
+
 end
 
 def enviar_correo
