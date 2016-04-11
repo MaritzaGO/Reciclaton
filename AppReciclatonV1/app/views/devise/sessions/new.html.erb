@@ -1,9 +1,13 @@
 
 
-<header class="login">
+<div class="login">
 
         <div class= "row">
           <div class="col-md-4 col-md-offset-4">
+
+
+    
+
         <h2>Inicio de sesion</h2>
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -31,8 +35,7 @@
 
         <%= render "devise/shared/links" %>
 
-        </div>
-        </div>
+        
 
         <div class="social">
             <a href="javascript:void(0)" class="facebook"></a>
@@ -43,4 +46,8 @@
 
         <span class="resp-info"></span>
 
-</header>
+    </div>
+  </div>
+  
+
+</div>

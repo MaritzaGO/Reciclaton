@@ -9,16 +9,12 @@
 
 <body>
 
-
-
-
-<div id="section1">
-    <header id="header-area" class="intro-section">
+    <header class="inicioapp">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
             <div class="header-content">
-              <h1>RECICLATÓN</h1>
+              <h2>RECICLATÓN</h2>
               <h4>Su solución ambiental</h4>
               <a href="#being-a-liker" class="btn btn-primary btn-xl page-scroll">Quiero saber más</a>
             </div>
@@ -26,10 +22,12 @@
         </div>
       </div>
     </header>
-  </div>
-  
+
+  <br>
+  <br>
 
 <!--Crazy boxes-->
+
 <div class="container">
   <div class="row">
 
@@ -43,9 +41,25 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <%= image_tag 'PV.jpg', class: 'image-carousel' %>
+
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+
+
           </div>
           <div class="item">
             <%= image_tag 'TIP.jpg', class: 'image-carousel' %>
+
+          <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+
+
           </div>
           <div class="item">
             <%= image_tag 'recycle-symbol.jpg', class: 'image-carousel' %>
@@ -55,40 +69,41 @@
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
               </div>
-            </div>
+          
+          </div>
 
           </div>
 
         </div>
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
       </div>
 
     <div class="col-md-6">
-      <div class="separator">
-        <h3>Recicle tips</h3>
+        <div class="separator">
+          <h3>Recicle tips</h3>
+        </div>
+        
+        <section class="crazy-boxes">
+          <div class="crazy-box box1">
+            <p>¿Sabe usted que hacen con los residuos que usted recicla?</p>
+          </div>
+
+          <div class="crazy-box box2">
+            <p>¿En el momento de reciclar un residuo sabe usted con seguridad donde depositarlo?</p>
+          </div>
+
+          <div class="crazy-box box3">
+            <p>¿?</p>
       </div>
       
-      <section class="crazy-boxes">
-        <div class="crazy-box box1">
-          <p>¿Sabe usted que hacen con los residuos que usted recicla?</p>
-        </div>
-
-        <div class="crazy-box box2">
-          <p>¿En el momento de reciclar un residuo sabe usted con seguridad donde depositarlo?</p>
-        </div>
-
-        <div class="crazy-box box3">
-          <p>¿?</p>
-        </div>
-      </section>
-
+  </section>
 
       <div class="separator">
         <span>Recicle inteligente y consciente</span>
@@ -96,8 +111,10 @@
     </div>
 
 
-    </div>
+
 </div>
+</div>
+
 <!-- end crazy-boxes -->
 
 
