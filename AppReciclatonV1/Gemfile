@@ -60,13 +60,13 @@ group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 
-
+end 
 group :production do
   # Postgresql
   gem 'pg'
 	# Rails 12.Ayuda a ver los load en la consola
-  gem 'rails_12factor', group: :production
+  gem 'rails_12factor'
 
-  
+
 end
 
