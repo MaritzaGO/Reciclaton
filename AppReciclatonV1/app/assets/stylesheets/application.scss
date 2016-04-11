@@ -16,13 +16,12 @@
  *= require theme
  *= require active_admin
  *= require bootstrap2
- *= require style
  *= require font-awesome
- *= require style
  *= require responsive
  *= require linecons
  *= require animate
  *= require animation
+ *= require bootstrap-theme
  */
 
 
@@ -33,6 +32,70 @@
 a {
 	text-decoration: none !important;
 }
+
+
+/* Primary Styles
+---------------------------------*/
+body {
+  background:#fff;
+  font-family: 'Lato', sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  color:#888888;
+  margin:0;
+}
+h2{
+  font-size:38px;
+  color:#222222;
+  font-family:'Dosis';
+  font-weight:700;
+  margin:35px 0 25px 0;
+  text-align:center;
+  text-transform:uppercase;
+}
+h3{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  color:#222222;
+  font-size:16px;
+  margin:0 0 5px 0;
+  text-transform:uppercase;
+}
+h6{
+  font-size:16px;
+  color:#888888;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  text-align:center;
+  margin:0 0 60px 0;
+}
+p{
+  line-height:24px;
+  margin:0;
+}
+
+/* Header Styles
+---------------------------------*/
+
+#header_outer{
+  background:#ffffff;
+  padding:30px 0px;
+  }
+
+.header_section{
+  position:relative;
+  }
+  
+.logo{
+  float:left;
+  }
+  
+.res-nav_click{ display:none;}
+  
+
+/* Nav Styles
+---------------------------------*/
+
 
 .main-bar {
 	background-color: #006600;
@@ -146,18 +209,95 @@ text-align: center;
 
 
 
-.header-area {
+header {
      
       background-image: url(PV.jpg);
-      background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(PV.jpg);
+      background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(PV.jpg) no repeat;
       background-position: center;
       webkit-background-size: cover;
       moz-background-size: cover;
 }
 
+header .login {
+ background-image: url(ambiental.jpg);
+ width: 100%
+}
+
  
 
+/* Services
+---------------------------------*/
 
+#service{
+  padding:83px 0px;
+  }
+
+.service_area{
+  padding:40px 0 40px; 
+  }
+  
+.service_section{
+  }
+  
+.service_block{
+  text-align:center;
+  padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+.service_icon{
+  border:2px solid #f56eab;
+  border-radius:50%;
+  width:90px;
+  height:90px;
+  margin:0px auto 25px;
+  }
+  
+.service_icon.icon2{
+  border:2px solid #7cc576;
+  }
+  
+.service_icon.icon3{
+  border:2px solid #49b5e7;
+  }
+  
+.service_icon span {
+    background:#f56eab;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.service_icon.icon2 span {
+    background:#7cc576;
+}
+.service_icon.icon3 span{
+    background:#49b5e7;
+  }
+.service_icon i{
+  color: #fff;
+    font-size: 40px;
+    margin-top: 0;
+    position: relative;
+    top: 14px;
+    z-index: 20;
+  }
+  
+.service_block h3{
+  font-family: 'Dosis';
+  font-weight: 600;
+  font-size:18px;
+  color:#111111;
+  margin:35px 0 18px;
+  }
+  
+.service_block p{
+  font-size:16px;
+  color:#888888;
+  margin:0px;
+  }
+  
 
 
 

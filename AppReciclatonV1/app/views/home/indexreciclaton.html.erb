@@ -12,39 +12,6 @@
 
 
 
-
-<script type="text/javascript">
-  $(document).ready(function(e) {
-        $('.res-nav_click').click(function(){
-    $('ul.toggle').slideToggle(600) 
-      }); 
-      
-  $(document).ready(function() {
-$(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 0) {
-             $('#header_outer').addClass('fixed');
-         }
-         else {
-             $('#header_outer').removeClass('fixed');
-         }
-    });
-  
-    });
-    
-
-        }); 
-function resizeText() {
-  var preferredWidth = 767;
-  var displayWidth = window.innerWidth;
-  var percentage = displayWidth / preferredWidth;
-  var fontsizetitle = 25;
-  var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-  $(".divclass").css("font-size", newFontSizeTitle)
-}
-</script>
-
-
-
 <div id="section1">
     <header id="header-area" class="intro-section">
       <div class="container">
@@ -62,14 +29,7 @@ function resizeText() {
   </div>
   
 
-
-
-
-
-
-
-
-
+<!--Crazy boxes-->
 <div class="container">
   <div class="row">
 
@@ -127,7 +87,7 @@ function resizeText() {
         <div class="crazy-box box3">
           <p>¿?</p>
         </div>
-      </section><!-- end crazy-boxes -->
+      </section>
 
 
       <div class="separator">
@@ -138,13 +98,10 @@ function resizeText() {
 
     </div>
 </div>
+<!-- end crazy-boxes -->
 
 
-
-
-    
-
-<!--Service-->
+<!--Services-->
 <section  id="service">
   <div class="container">
     <h2>Servicios</h2>
@@ -154,28 +111,28 @@ function resizeText() {
           <div class="service_block">
             <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
             <h3 class="animated fadeInUp wow">Compra y venta de residuos</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+            <p class="animated fadeInDown wow"></p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="service_block">
             <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span> </div>
             <h3 class="animated fadeInUp wow">Recuperación y transformación de residuos</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+            <p class="animated fadeInDown wow"></p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="service_block">
             <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-shield"></i></span> </div>
             <h3 class="animated fadeInUp wow">Capacitación</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+            <p class="animated fadeInDown wow"></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--Service-->
+<!--Services-->
 
 
 
@@ -199,157 +156,6 @@ function resizeText() {
         <div class="progress-bar progress-bar-danger" style="width: 10%">5% Complete (danger)</div>
       </div>
       </div>
-
-
-
-
-
-// HTML document is loaded. DOM is ready.
-    $(function() {  
-
-    // Parallax
-        $('.intro-section').parallax({
-          imageSrc: 'img/bg-1.jpg',
-          speed: 0.2
-        });
-        $('.services-section').parallax({
-          imageSrc: 'img/bg-2.jpg',
-          speed: 0.2
-      });
-        $('.contact-section').parallax({
-          imageSrc: 'img/bg-3.jpg',
-          speed: 0.2
-        });    
-
-        // jQuery Scroll Up / Back To Top Image
-        $.scrollUp({
-                scrollName: 'scrollUp',      // Element ID
-            scrollDistance: 300,         // Distance from top/bottom before showing element (px)
-            scrollFrom: 'top',           // 'top' or 'bottom'
-            scrollSpeed: 1000,            // Speed back to top (ms)
-            easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
-            animation: 'fade',           // Fade, slide, none
-            animationSpeed: 300,         // Animation speed (ms)            
-            scrollText: '', // Text for element, can contain HTML           
-            scrollImg: true            // Set true to use image           
-            });
-
-        // ScrollUp Placement
-        $( window ).on( 'scroll', function() {
-
-            // If the height of the document less the height of the document is the same as the
-            // distance the window has scrolled from the top...
-            if ( $( document ).height() - $( window ).height() === $( window ).scrollTop() ) {
-
-                // Adjust the scrollUp image so that it's a few pixels above the footer
-                $('#scrollUp').css( 'bottom', '80px' );
-
-            } else {      
-                // Otherwise, leave set it to its default value.
-                $('#scrollUp').css( 'bottom', '30px' );        
-            }
-        });
-
-        $('.single-page-nav').singlePageNav({
-          offset: $('.single-page-nav').outerHeight(),
-          speed: 1500,
-          filter: ':not(.external)',
-          updateHash: true
-        });
-
-        $('.navbar-toggle').click(function(){
-          $('.single-page-nav').toggleClass('show');
-        });
-
-        $('.single-page-nav a').click(function(){
-          $('.single-page-nav').removeClass('show');
-        });
-        
-    });
-</script>
-
-<script type="text/javascript">
-
-   
-  jQuery(document).ready(function($){     
-// Portfolio Isotope
-  var container = $('#portfolio-wrap'); 
-  
-
-  container.isotope({
-    animationEngine : 'best-available',
-      animationOptions: {
-        duration: 200,
-        queue: false
-      },
-    layoutMode: 'fitRows'
-  }); 
-
-  $('#filters a').click(function(){
-    $('#filters a').removeClass('active');
-    $(this).addClass('active');
-    var selector = $(this).attr('data-filter');
-      container.isotope({ filter: selector });
-        setProjects();    
-      return false;
-  });
-    
-    
-    function splitColumns() { 
-      var winWidth = $(window).width(), 
-        columnNumb = 1;
-      
-      
-      if (winWidth > 1024) {
-        columnNumb = 4;
-      } else if (winWidth > 900) {
-        columnNumb = 2;
-      } else if (winWidth > 479) {
-        columnNumb = 2;
-      } else if (winWidth < 479) {
-        columnNumb = 1;
-      }
-      
-      return columnNumb;
-    }   
-    
-    function setColumns() { 
-      var winWidth = $(window).width(), 
-        columnNumb = splitColumns(), 
-        postWidth = Math.floor(winWidth / columnNumb);
-      
-      container.find('.portfolio-item').each(function () { 
-        $(this).css( { 
-          width : postWidth + 'px' 
-        });
-      });
-    }   
-    
-    function setProjects() { 
-      setColumns();
-      container.isotope('reLayout');
-    }   
-    
-    container.imagesLoaded(function () { 
-      setColumns();
-    });
-    
-  
-    $(window).bind('resize', function () { 
-      setProjects();      
-    });
-
-});
-$( window ).load(function() {
-  jQuery('#all').click();
-  return false;
-});
-</script>
-
-
-
-
-
 
 
 
