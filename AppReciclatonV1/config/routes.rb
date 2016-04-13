@@ -2,13 +2,11 @@ Rails.application.routes.draw do
   
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :clients
   resources :alliances
   resources :supplies
   resources :demands
   resources :residues
   resources :categories
-  resources :clients
 
   root to: "home#indexreciclaton"
 
@@ -21,6 +19,11 @@ Rails.application.routes.draw do
   get '/nosotros', to: 'home#nosotros', as: :nosotros
   get '/contactenos', to: 'home#contactenos', as: :contactenos
   get '/camp_sens', to: 'home#camp_sens', as: :camp_sens
+
+
+  devise_for :clients, controllers: {sessions: 'sessions', registrations: 'registrations'} 
+
+  resources :clients
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,16 @@
+<%= form_for(Client.new, as: :client, url: client_session_path) do |f| %>
+  <div class="alert alert-danger errors" style="display: none"></div>
+  <div class="form-group">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Log in", class: "btn btn-success btn-lg" %>
+  </div>
+<% end %>

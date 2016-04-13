@@ -15,6 +15,6 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require active_admin
-//= require scripts
+//= require sessions
 
 
