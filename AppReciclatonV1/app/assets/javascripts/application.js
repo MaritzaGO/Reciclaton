@@ -16,5 +16,6 @@
 //= require turbolinks
 //= require active_admin
 //= require sessions
+//= require jsreciclaton
 
 

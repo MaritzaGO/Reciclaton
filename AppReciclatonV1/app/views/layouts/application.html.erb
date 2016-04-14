@@ -60,7 +60,7 @@
 <body>
   <!-- Fixed navbar -->
   <div class= "row">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default ">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -77,17 +77,24 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        
+        <li><a href="<%= compra_venta_path %>">Compra/Venta Residuos</a></li>
+        <li><a href="<%= l_reciclaje_path %>">Líneas de reciclaje</a></li>
+        <li><a href="<%= red_reciclatones_path %>">Red de reciclatones</a></li>
+        <li><a href="<%= nosotros_path %>">Nosotros</a></li>
+        <li><a href="<%= contactenos_path %>">Contáctenos</a></li>
+
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Campaña de sensibilizacion<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Tips de reciclaje</a></li>
+            <li><a href="#">Clases presenciales</a></li>
+            <li><a href="#">Clases virtuales</a></li>
+            <li><a href="#">Tutoriales</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Otros</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Puntos de reciclaje inteligente</a></li>
           </ul>
         </li>
       </ul>
@@ -98,15 +105,23 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+        
+                  <% if client_signed_in? %>
+                    <li>
+                      <p>Bienvenid@ <%= current_client.name_complet%></p>
+                    <%= link_to('Cerrar sesión', destroy_client_session_path, :method => :delete) %>        
+                    </li>
+                  <% else %>
+                    <li>
+                    <a href="#" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Iniciar sesion</a>
+                    </li>
+              
+                    <li>
+                    <%= link_to('Soy nuevo usuario', new_client_registration_path)%>
+                    </li>
+              
+                  <% end %>
+  
           </ul>
         </li>
       </ul>

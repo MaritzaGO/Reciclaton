@@ -88,16 +88,16 @@ background-repeat: no-repeat;
      
       background-image: url(hierba.png);
       background-position: center;
-      height: 100%;
+      height: 50%;
       width: 100%;
       background-position: center;
     -webkit-background-size: cover;
     /*-moz-background-size: cover;*/
-    background-size: cover;
-    -o-background-size: cover;
+    /*background-size: cover;*/
+    /*-o-background-size: cover;*/
     background-repeat: no-repeat;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: -30px;
+    margin-bottom: -10px;
 }
 
 body.home .bannerHome {
@@ -173,6 +173,11 @@ body.home .bannerHome {
   display: inline-block !important;
   vertical-align: middle;
 }
+
+> li {
+ color: white
+}
+
 
 .main-bar .navbar-right li{
 	background: #33CC66;
