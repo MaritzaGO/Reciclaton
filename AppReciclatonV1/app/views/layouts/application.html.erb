@@ -60,49 +60,48 @@
 <body>
   <!-- Fixed navbar -->
   <div class= "row">
-    <nav class="navbar navbar-default ">
+    <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="<%= root_path %>"><img src="<%=image_path('reciclatonlogo.png')%>" style="width:30px;height:30px;position:center;">Reciclatón</a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+              </button>
+      <a class="navbar-brand" class="active" href="<%= root_path %>"><span class="sr-only">(current)</span><img src="<%=image_path('reciclatonlogo.png')%>" style="width:30px;height:30px;position:center;">Reciclatón</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        
-        <li><a href="<%= compra_venta_path %>">Compra/Venta Residuos</a></li>
-        <li><a href="<%= l_reciclaje_path %>">Líneas de reciclaje</a></li>
-        <li><a href="<%= red_reciclatones_path %>">Red de reciclatones</a></li>
-        <li><a href="<%= nosotros_path %>">Nosotros</a></li>
-        <li><a href="<%= contactenos_path %>">Contáctenos</a></li>
+              
+                  <li><a href="<%= compra_venta_path %>">Compra/Venta Residuos</a></li>
+                  <li><a href="<%= l_reciclaje_path %>">Líneas de reciclaje</a></li>
+                  <li><a href="<%= red_reciclatones_path %>">Red de reciclatones</a></li>
+                  <li><a href="<%= nosotros_path %>">Nosotros</a></li>
+                  <li><a href="<%= contactenos_path %>">Contáctenos</a></li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Campaña de sensibilizacion<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Tips de reciclaje</a></li>
-            <li><a href="#">Clases presenciales</a></li>
-            <li><a href="#">Clases virtuales</a></li>
-            <li><a href="#">Tutoriales</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Otros</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Puntos de reciclaje inteligente</a></li>
-          </ul>
+              <ul class="dropdown-menu">
+                    <li><a href="#">Tips de reciclaje</a></li>
+                    <li><a href="#">Clases presenciales</a></li>
+                    <li><a href="#">Clases virtuales</a></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Otros</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Puntos de reciclaje inteligente</a></li>
+              </ul>
         </li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar en la pagina">
+          </div>
+          <button type="submit" class="btn btn-default">Buscar!</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         
@@ -112,6 +111,7 @@
                     <%= link_to('Cerrar sesión', destroy_client_session_path, :method => :delete) %>        
                     </li>
                   <% else %>
+                    
                     <li>
                     <a href="#" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Iniciar sesion</a>
                     </li>
@@ -129,76 +129,11 @@
   </div><!-- /.container-fluid -->
 </nav>
   
-    <nav class="navbar navbar-default main-bar navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-          </button>
+    
 
 
-          
-          <a class="navbar-brand" href="<%= root_path %>"><img src="<%=image_path('reciclatonlogo.png')%>" style="width:30px;height:30px;position:center;">Reciclatón</a>
-
-        </div>
-        <div id="navbar" class="navbar-collapse navbar-left collapse">
-          <ul class="nav main-bar navbar-nav  ">
-           
-            <li><a href="<%= compra_venta_path %>">Compra/Venta Residuos</a></li>
-            <li><a href="<%= l_reciclaje_path %>">Líneas de reciclaje</a></li>
-            <li><a href="<%= red_reciclatones_path %>">Red de reciclatones</a></li>
-            <li><a href="<%= nosotros_path %>">Nosotros</a></li>
-            <li><a href="<%= contactenos_path %>">Contáctenos</a></li>
-            <li class="dropdown">
-              <a href="<%= camp_sens_path %>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Campaña de sensibilizacion <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Tips de reciclaje</a></li>
-                <li><a href="#">Clases presenciales</a></li>
-                <li><a href="#">Clases virtuales</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Otros</li>
-                <li><a href="#">Puntos de reciclaje inteligente</a></li>
-
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-
-        <div class="navbar-left navbar-collapse">
-          <%= form_tag () do %>
-            <div class="input-group">
-              <%= text_field_tag :search , nil, placeholder: "Buscar en la pagina", class: "form-control" %>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Buscar!</button>
-              </span>
-            </div><!-- /input-group -->
-          <% end %>
-        </div>
-
-        <ul class="nav navbar-nav navbar-right">
-          <% if client_signed_in? %>
-            <li>
-              <p>Bienvenid@ <%= current_client.name_complet%></p>
-            <%= link_to('Cerrar sesión', destroy_client_session_path, :method => :delete) %>        
-            </li>
-          <% else %>
-            <li>
-            <a href="#" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Iniciar sesion</a>
-            </li>
-      
-            <li>
-            <%= link_to('Soy nuevo usuario', new_client_registration_path)%>
-            </li>
-      
-          <% end %>
 
 
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  
 
 <%= render partial: 'partials/loginmodal' %>
 
@@ -207,3 +142,75 @@
 
 </body>
 </html>
+
+
+
+
+
+<div id="cboxbutton" style="position: fixed; bottom: 8px; right: 16px; padding: 3px 20px; text-align: center; cursor: pointer; background-color: #EDF3F7; border:#C3D7E5 1px solid;border-radius: 3px; font-family: Tahoma, sans-serif; font-size: 14px; font-weight: bold"></div>
+<div id="cboxwrap" style="position: fixed; bottom: 48px; right: 16px; background: #3CB371; padding: 3px; border:#C3D7E5 1px solid;border-radius: 3px;"></div>
+
+<script>
+/*
+* Cbox dynamic loader v.2
+*/
+(function () {
+  var showByDefault = true;
+  var cboxContainer = document.getElementById("cboxwrap");
+  var cboxToggleButton = document.getElementById("cboxbutton");
+  var buttonStringOpen = "Open Cbox";
+  var buttonStringClose = "Close Cbox";
+  var lsKey = "cbox:isOpen";
+
+  var cboxHTML = '<!-- BEGIN CBOX - www.cbox.ws - v4.3 -->'
+  +'<div id="cboxdiv" style="position: relative; margin: 0 auto; width: 200px; font-size: 0; line-height: 0;">'
+  +'<div style="position: relative; height: 300px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 0px solid;"><iframe src="http://www3.cbox.ws/box/?boxid=3494336&boxtag=xwcqa9&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain3-3494336" id="cboxmain3-3494336"></iframe></div>'
+  +'<div style="position: relative; height: 80px; overflow: hidden; border: 0px solid; border-top: 0px;"><iframe src="http://www3.cbox.ws/box/?boxid=3494336&boxtag=xwcqa9&sec=form" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform3-3494336" id="cboxform3-3494336"></iframe></div>'
+  +'</div>'
+  +'<!-- END CBOX -->';
+
+  var htmlInjected = false;
+  var isVisible = false;
+  var toggleCbox = function (show) {
+    
+    if (!show) {
+      cboxContainer.style.display = "none";
+      if (cboxToggleButton) {
+        cboxToggleButton.innerHTML = buttonStringOpen;
+      }
+      
+    }
+    else {
+      cboxContainer.style.display = "block";
+      if (cboxToggleButton) {
+        cboxToggleButton.innerHTML = buttonStringClose;
+      }
+    }
+    
+    if (show && !htmlInjected) {
+      cboxContainer.innerHTML = cboxHTML;
+      htmlInjected = true;
+    }
+    
+    isVisible = show;
+  }
+
+  if (localStorage && lsKey && typeof localStorage.getItem(lsKey) === "string") {
+    toggleCbox((localStorage.getItem(lsKey) === "yes"));
+  }
+  else {
+    toggleCbox(showByDefault);
+  }
+
+  if (cboxToggleButton) {
+    cboxToggleButton.onclick = function () {
+      toggleCbox(!isVisible);
+      
+      if (localStorage && lsKey) {
+        localStorage.setItem(lsKey, isVisible ? "yes" : "no");
+      }
+    }
+  }
+})();
+
+</script> 

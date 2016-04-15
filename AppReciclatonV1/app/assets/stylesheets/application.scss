@@ -140,19 +140,18 @@ body.home .bannerHome {
 /* Nav Styles
 ---------------------------------*/
 
-
-.main-bar {
-	background-color: #006600;
+.nav .navbar-nav .navbar-right > li{
+  color: white;
 }
 
-.main-bar .navbar-header a {
-	color:white;
-}
 
-#navbar .main-bar > li > a {
-	color: white;
-  padding: 12px 6px;
-} 	
+	
+
+.navbar-header a {
+	
+  background-color: #006600;
+}
+ 	
 
 .main-bar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 	background: #003300;
@@ -161,9 +160,7 @@ body.home .bannerHome {
   padding: 12px 6px;
 }
 
-.main-bar .navbar-right {
-  margin-right: 0;
-}
+
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
   margin-left: 0 !important;
@@ -172,10 +169,6 @@ body.home .bannerHome {
 .navbar-brand > img{
   display: inline-block !important;
   vertical-align: middle;
-}
-
-> li {
- color: white
 }
 
 
@@ -187,15 +180,13 @@ body.home .bannerHome {
 }
 
 .navbar-default{
-  background-color: #060 !important;
+  background-color: #468966 !important;
 }
 
-.main-bar .navbar-right li > a{
-  
+.navbar-default li{
   font-family: 'Fjalla One', sans-serif;
-	color: #003300;
-  padding: 12px 6px;
-  }
+  color: white;
+}
 
 
 .carousel-inner > .item{
@@ -385,7 +376,7 @@ text-align: center;
 
 
 #section7 {
-  background-color: #5491bd;
+  background-color: #468966;
   color: #f6f6f6;
   min-height:100px;
   padding-top:20px;
@@ -394,14 +385,19 @@ text-align: center;
 
 
 
-#footer {
-    background: url(dd) top no-repeat;
-    width: 840px;
-    height: 333px;
-    display: block;
-    margin: 0 auto;
-    padding: 70px 70px 150px;
-    color: #eee;
-    font-size: 12px;
+.final {
+    /*background: url(verdegreen.png) top no-repeat;*/
+    background: #468966;
+    font-size: 18px;
     position: relative;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 60px;
+    width: 100%;
+}
+
+.final footer {
+  color: white;
+  text-align: center;
 }
