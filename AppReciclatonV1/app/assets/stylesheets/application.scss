@@ -86,46 +86,61 @@ background-repeat: no-repeat;
 
 .inicioapp{
      
-      background-image: url(hierba.png);
-      background-position: center;
-      height: 50%;
-      width: 100%;
-      background-position: center;
+    /*background-image: url(hierba.png);*/
+    background-color: black;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-position: center;
     -webkit-background-size: cover;
     /*-moz-background-size: cover;*/
     /*background-size: cover;*/
     /*-o-background-size: cover;*/
     background-repeat: no-repeat;
-    margin-top: -30px;
-    margin-bottom: -10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.inicioapp h2 {
+ color: white;
+}
+
+.inicioapp h4 {
+ color: white !important;
+}
+
+.inicioapp a {
+ color: white !important;
+}
+
+
 body.home .bannerHome {
-    background: #002;
+    background: white;
     width: 100%;
-    height: 694px;
+    height: 50%;
 }
 
 .bienvenidaHome p {
-    background: url(hierba.png) no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+    background-color: blue no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
     margin: 0 auto;
     max-width: 865px;
     padding: 15px 0 30px 30px;
 }
 
 
+
 .bienvenidaHome {
-    background: url(abstractnature.png) no-repeat 50% 0;
     color: white;
     font-size: 19px;
     font-family: "Open Sans","Roboto";
     font-weight: lighter;
     font-style: italic;
-    line-height: 150%;
+    line-height: 100%;
     text-align: center;
     margin-top: -30px !important;
-    padding: 30px 0 15px;
-}
+    background-position: center;
+        
+  }
 
 .uk-panel, a.uk-panel:hover {
     color: inherit;
@@ -140,30 +155,27 @@ body.home .bannerHome {
 /* Nav Styles
 ---------------------------------*/
 
-.nav .navbar-nav .navbar-right > li{
-  color: white;
-}
-
-
-	
 
 .navbar-header a {
-	
   background-color: #006600;
+  color: white;
 }
  	
 
-.main-bar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+ .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 	background: #003300;
   font-family: 'Fjalla One', sans-serif;
   margin-right: 0;
   padding: 12px 6px;
+  color: white;
+  margin-bottom: 0;
 }
 
 
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
   margin-left: 0 !important;
+  color: white;
 }
 
 .navbar-brand > img{
@@ -171,23 +183,21 @@ body.home .bannerHome {
   vertical-align: middle;
 }
 
-
-.main-bar .navbar-right li{
-	background: #33CC66;
+.navbar-right li{
+	
   margin-left: 4px;
-  border-style: dashed; border-width: 1px;
-
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
 }
+
+
 
 .navbar-default{
   background-color: #468966 !important;
 }
 
-.navbar-default li{
-  font-family: 'Fjalla One', sans-serif;
-  color: white;
-}
 
+/* Carousel */
 
 .carousel-inner > .item{
 	text-align: center;
@@ -229,17 +239,6 @@ body.home .bannerHome {
   line-height: 24px;
   text-align: justify;
   color: darkblue;
-}
-
-.final {
-  position: relative;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.final footer{
-  font-family: 'Fjalla One', cursive;
 }
 
 .estiloboton {
@@ -339,10 +338,26 @@ text-align: center;
   margin:0px;
   }
   
+.navbar-default .navbar-nav > li > a{
+  color: white !important;
+}
 
-
-
-
+.w3-container {
+    padding: 0.01em 16px;
+}
+.w3-bottombar {
+    border-bottom: 6px solid #468966 !important;
+}
+.w3-border {
+    border: 1px solid #468966 !important;
+}
+.w3-border-green, .w3-hover-border-green:hover {
+    border-color: #468966 !important;
+}
+.w3-pale-green, .w3-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #e7ffe7 !important;
+}
 
 
 
@@ -374,6 +389,14 @@ text-align: center;
 
 /*Footer */
 
+.finreciclaton
+{
+    max-height: 20px;
+    background-color: #222; 
+    padding: 0px;
+    color:rgba(230, 230, 230, 0.5);
+    text-align: center;
+}
 
 #section7 {
   background-color: #468966;
@@ -381,8 +404,10 @@ text-align: center;
   min-height:100px;
   padding-top:20px;
   padding-bottom:20px;
+  -moz-background-size: cover;
+  background-size: cover;
+  
 }
-
 
 
 .final {
@@ -395,9 +420,12 @@ text-align: center;
     -o-background-size: cover;
     height: 60px;
     width: 100%;
+    bottom: 0;
+    text-align: center;
 }
 
 .final footer {
   color: white;
   text-align: center;
+  font-family: 'Fjalla One', cursive;
 }

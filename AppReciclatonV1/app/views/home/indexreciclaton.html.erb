@@ -12,167 +12,182 @@
     <header class="inicioapp">
       
         <div class="row">
-        <div class="container">
+        <div class="w3-container w3-bottombar w3-border-green w3-border">
           <div class="col-sm-12 text-center">
             <div class="header-content">
+
+
+
               <h2>RECICLATÓN</h2>
               <h4>Su solución ambiental</h4>
               <a href="#being-a-liker" class="btn btn-primary btn-xl page-scroll">Quiero saber más</a>
+            </div> </br>
+
+
+            <%= video_tag("earth.ogv", :size => "420x240", :controls => false, autoplay: true, loop: true) %>
+
+
+        <div class="uk-width-1-1">
+            <div class="uk-panel bannerHome">
+                <div class="bannerHome">
+                  <div class="banner">
+                    <div class="bannerDescription">
+                    </div>
+                </div>
+                <div class="over">
+                  <div class="bannerTitle">
+                    <h1></h1>
+                    <h2></h2>
+                  </div>
+                </div>
+              <div class="bannerDescription">
+              </div>
             </div>
+          </div>
+        </div>
+
           </div>
         </div>
       </div>
     </header>
 
-  <br>
-  <br>
-
-<div class="row">
-    <div class= "container">
-        <div class="uk-panel bannerHome">
-        <div class="bannerHome">
-              <div class="banner" style="background-image: url(hierba.jpg)">
-              <div class="bannerDescription">
-                      </div>
-            </div>
-            <div class="over">
-              <div class="bannerTitle">
-                <h1></h1>
-                <h2></h2>
-              </div>
-              <div class="bannerDescription">
-                      </div>
-            </div>
-          </div>
-        </div>
-    </div>
-</div>
-
+</br>
 
 <div class="uk-panel bienvenidaHome">
-  <p>Our mission is offer reliable services and efficient global logistics, including air and maritime transport, Currier on board (OBC), Express Service, logistics for third parties, airport ground services, representations for airlines and other related logistics services</p></div>
+  <p>"Nuestra mision es crear un mejor planeta para vivir"</p></div>
 
 <!--Services-->
 <section  id="service">
-  <div class="container">
-    <h2>Servicios</h2>
-    <div class="service_area">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Compra y venta de residuos</h3>
-            <p class="animated fadeInDown wow"></p>
+  <div class="row">
+    <div class="container">
+        
+            <div>
+            
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+              <h2>Servicios</h2>
+            </div>
+
+              <div class="service_area">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="service_block">
+                      <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
+                      <h3 class="animated fadeInUp wow">Compra y venta de residuos</h3>
+                      <p class="animated fadeInDown wow"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="service_block">
+                      <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span> </div>
+                      <h3 class="animated fadeInUp wow">Recuperación y transformación de residuos</h3>
+                      <p class="animated fadeInDown wow"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="service_block">
+                      <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-shield"></i></span> </div>
+                      <h3 class="animated fadeInUp wow">Capacitación</h3>
+                      <p class="animated fadeInDown wow"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Recuperación y transformación de residuos</h3>
-            <p class="animated fadeInDown wow"></p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-shield"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Capacitación</h3>
-            <p class="animated fadeInDown wow"></p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
+
 <!--Services-->
 
 
 <!--Crazy boxes-->
-
 <div class="container">
-  <div class="row">
+      <div>
+        <div class="row">
 
-    <div class="col-md-6">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <%= image_tag 'PV.jpg', class: 'image-carousel' %>
+          <div class="col-md-6">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <%= image_tag 'PV.jpg', class: 'image-carousel' %>
 
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-
-
-          </div>
-          <div class="item">
-            <%= image_tag 'TIP.jpg', class: 'image-carousel' %>
-
-          <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver galeria</a></p>
-            </div>
+                  <div class="carousel-caption">
+                    <h1>Example headline.</h1>
+                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                  </div>
 
 
-          </div>
-          <div class="item">
-            <%= image_tag 'recycle-symbol.jpg', class: 'image-carousel' %>
-          
-          <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
+                </div>
+                <div class="item">
+                  <%= image_tag 'TIP.jpg', class: 'image-carousel' %>
+
+                <div class="carousel-caption">
+                    <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver galeria</a></p>
+                  </div>
+
+
+                </div>
+                <div class="item">
+                  <%= image_tag 'recycle-symbol.jpg', class: 'image-carousel' %>
+                
+                <div class="carousel-caption">
+                      <h1>Another example headline.</h1>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
+                    </div>
+                
+                </div>
+
+                </div>
+
               </div>
-          
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+          <div class="col-md-6">
+              <div class="separator">
+                <h3>Recicle tips</h3>
+              </div>
+              
+              <section class="crazy-boxes">
+                <div class="crazy-box box1">
+                  <p>¿Sabe usted que hacen con los residuos que usted recicla?</p>
+                </div>
+
+                <div class="crazy-box box2">
+                  <p>¿En el momento de reciclar un residuo sabe usted con seguridad donde depositarlo?</p>
+                </div>
+
+                <div class="crazy-box box3">
+                  <p>¿?</p>
+            </div>
+            
+        </section>
+
+            <div class="separator">
+              <span>Recicle inteligente y consciente</span>
+            </div>
           </div>
 
-          </div>
 
-        </div>
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
       </div>
-
-    <div class="col-md-6">
-        <div class="separator">
-          <h3>Recicle tips</h3>
-        </div>
-        
-        <section class="crazy-boxes">
-          <div class="crazy-box box1">
-            <p>¿Sabe usted que hacen con los residuos que usted recicla?</p>
-          </div>
-
-          <div class="crazy-box box2">
-            <p>¿En el momento de reciclar un residuo sabe usted con seguridad donde depositarlo?</p>
-          </div>
-
-          <div class="crazy-box box3">
-            <p>¿?</p>
-      </div>
-      
-  </section>
-
-      <div class="separator">
-        <span>Recicle inteligente y consciente</span>
-      </div>
-    </div>
-
-
-
-</div>
+  </div>
 </div>
 
 <!-- end crazy-boxes -->
@@ -183,8 +198,42 @@
 
     
 
+
+
+
+
+
+<section id="finreciclaton">
+  <div class="container">
+    <!-- #suscripcion -->
+    <div id ="finreciclaton1" >
+
+      <div class="row">
+        <div class="col-xs-3">
+            <p class="caja_neswa"><img src="<%=image_path('sobreanimado.gif')%>" alt="" style="float:left;margin-bottom: 5px;">
+        </div><!-- #Fin suscripcion -->
+
+        <div id ="finreciclaton2" class="col-xs-6">
+          <h4 style="margin-top: 73px;">Suscríbete a nuestro newsletter</h4>
+          Recibe noticias encaminadas a la sustentabilidad. 
+          <a class="breadcrumbs" target="_blank" href="">Suscríbete</a> </p>
+        </div>
+
+        <div class="col-xs-3" style="padding-top: 41px;">
+          <p>Colombia</p>
+          <span>Cra 43 A # 1-50, piso 6, oficina 652,</span><br/>
+          <span>Medellín</span><br/>
+          <span>(+57) 4 448 08 04</span><br/>
+          <span><a href="mailto:info@reciclaton.co" target="_self">info@reciclaton.co</a></span><br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="row">
-    <div class= "container">
+  <div class="container">
+    <div>
         <div class="page-header">
       
             <div class="progress">
@@ -194,50 +243,8 @@
             </div>
         </div>
     </div>
-</div>
-
-
-<div class="row">
-  <div class="container">
-          <section class="container-fluid" id="section7">
-      
-            <!--fontawesome icons-->
-            <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
-                <i class="fa fa-github fa-4x"></i>
-            </div>
-            <div class="col-sm-1 col-xs-4 text-center">
-                <i class="fa fa-pinterest fa-4x"></i>
-            </div>
-            <div class="col-sm-1 col-xs-4 text-center">
-                <i class="fa fa-google-plus fa-4x"></i>
-            </div>
-            <div class="col-sm-1 col-xs-4 text-center">
-                <i class="fa fa-twitter fa-4x"></i>
-            </div>
-            <div class="col-sm-1 col-xs-4 text-center">
-                <i class="fa fa-dribbble fa-4x"></i>
-            </div>
-        
-          </section>
   </div>
 </div>
-
-
-
-<!-- #suscripcion -->
-<div class="row">
-  <div class="container">
-        <div class="w3-container w3-light-grey w3-border">
-         <div id="suscripcion">
-            <h3>Suscríbete a nuestro newsletter</h3>
-            Recibe noticias encaminadas a la sustentabilidad. 
-            <a class="breadcrumbs" target="_blank" href="">Suscríbete</a> </p>
-            <p class="caja_neswa"><img src="<%=image_path('sobreanimado.gif')%>" alt="" style="float:left;margin-bottom: 5px;">
-          </div><!-- #Fin suscripcion -->
-       </div>
-  </div>
-</div>
-
 
 
 
@@ -247,7 +254,38 @@
     
       <div class= "final">
         <footer>
-          Reciclatón Copyright &copy; 2016
+
+            
+                      <section class="container-fluid" id="section7">
+                  
+                        <!--fontawesome icons-->
+                        <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
+                            <i class="fa fa-github fa-4x"></i>
+                        </div>
+                        <div class="col-sm-1 col-xs-4 text-center">
+                            <i class="fa fa-pinterest fa-4x"></i>
+                        </div>
+                        <div class="col-sm-1 col-xs-4 text-center">
+                            <i class="fa fa-google-plus fa-4x"></i>
+                        </div>
+                        <div class="col-sm-1 col-xs-4 text-center">
+                            <i class="fa fa-twitter fa-4x"></i>
+                        </div>
+                        <div class="col-sm-1 col-xs-4 text-center">
+                            <i class="fa fa-dribbble fa-4x"></i>
+                        </div>
+                        
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        Reciclatón Copyright &copy; 2016
+                      </section>
+                
+          
+
+         
         </footer>
       </div>
     
