@@ -72,7 +72,7 @@ p{
 
 .login{
  
- background-image: url(ambiental.jpg) ; 
+ 
  width: 100%;
  height: 100%;
  background-position: center;
@@ -84,10 +84,28 @@ background-attachment: scroll;
 background-repeat: no-repeat;
 }
 
+.login .form-group {
+  color: white;
+}
+
+ .login h4 {
+  color: white;
+}
+
+.login a {
+  color: blue !important;
+}
+
+div.modal-content.login {
+  background-image: url(hierba.png) ; 
+}
+
+
+
 .inicioapp{
      
     /*background-image: url(hierba.png);*/
-    background-color: black;
+    /* background-color: black; */
     background-position: center;
     height: 100%;
     width: 100%;
@@ -169,6 +187,7 @@ body.home .bannerHome {
   padding: 12px 6px;
   color: white;
   margin-bottom: 0;
+  height: 100%;
 }
 
 
@@ -176,6 +195,9 @@ body.home .bannerHome {
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
   margin-left: 0 !important;
   color: white;
+}
+nav.application {
+  border-width: 0 0 0px;
 }
 
 .navbar-brand > img{
@@ -190,12 +212,22 @@ body.home .bannerHome {
   font-family: 'Fjalla One', sans-serif;
 }
 
-
+.navbar-default .navbar-nav > li > a{
+  color: white !important;
+}
 
 .navbar-default{
   background-color: #468966 !important;
 }
+.navlogin a {
+  padding: 16px 15px !important;
 
+}
+
+li.navlogin  {
+  
+  background-color: #003300;
+}
 
 /* Carousel */
 
@@ -338,10 +370,6 @@ text-align: center;
   margin:0px;
   }
   
-.navbar-default .navbar-nav > li > a{
-  color: white !important;
-}
-
 .w3-container {
     padding: 0.01em 16px;
 }
@@ -384,7 +412,12 @@ text-align: center;
 /*Suscripcion*/
 
 
-
+.hr { 
+  background-color: black;
+  height: 10px;
+  width: 100%;
+  
+}
 
 
 /*Footer */
@@ -401,12 +434,18 @@ text-align: center;
 #section7 {
   background-color: #468966;
   color: #f6f6f6;
-  min-height:100px;
-  padding-top:20px;
-  padding-bottom:20px;
+  min-height:50px;
+  padding-top:10px;
+  padding-bottom:10px;
   -moz-background-size: cover;
   background-size: cover;
   
+}
+
+.fa-4x {
+    font-size: 2em !important;
+
+    color:white;
 }
 
 
@@ -428,4 +467,19 @@ text-align: center;
   color: white;
   text-align: center;
   font-family: 'Fjalla One', cursive;
+}
+
+video { 
+    position: fixed;
+    top: 71%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    opacity: 0.8;
+    transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
 }

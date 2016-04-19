@@ -60,7 +60,7 @@
 <body>
   <!-- Fixed navbar -->
   <div class= "row">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top application">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -70,7 +70,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
               </button>
-      <a class="navbar-brand" class="active" href="<%= root_path %>"><span class="sr-only">(current)</span><img src="<%=image_path('reciclatonlogo.png')%>" style="width:30px;height:30px;position:center;">Reciclatón</a>
+      <a class="navbar-brand" class="active" href="<%= root_path %>"><span class="sr-only">(current)</span><img src="<%=image_path('reciclatonlogo.png')%>" style="width:30px;height:28px;position:center;">Reciclatón</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -108,15 +108,16 @@
                   <% if client_signed_in? %>
                     <li>
                       <p>Bienvenid@ <%= current_client.name_complet%></p>
-                    <%= link_to('Cerrar sesión', destroy_client_session_path, :method => :delete) %>        
+                    <%= link_to('Cerrar sesión', destroy_client_session_path, :method => :delete) %>    
                     </li>
                   <% else %>
                     
-                    <li class="btn btn-success navbar-btn">
+                    <li class="navlogin">
                     <a href="#" data-toggle="modal" data-target="#myModal">Iniciar sesion</a>
                     </li>
+                  
               
-                    <li class="btn btn-success navbar-btn">
+                    <li class="navlogin">
                     <%= link_to('Soy nuevo usuario', new_client_registration_path)%>
                     </li>
               
@@ -127,15 +128,17 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+
+  <div class="hr">
+
+      </div>
+      
 </nav>
   
-    
-
-
-
-
 
 <%= render partial: 'partials/loginmodal' %>
+
+
 
 
  <%= yield %>   

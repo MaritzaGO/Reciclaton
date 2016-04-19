@@ -18,6 +18,7 @@ gem "letter_opener", :group => :development
 #Framework portal administrativo
 gem 'activeadmin', '~> 1.0.0.pre2' 
 
+#Registro de usuario
 gem 'devise'
 
 gem 'carrierwave'
@@ -26,6 +27,7 @@ gem "twitter-bootstrap-rails"
 
 gem 'money-rails'
 
+gem 'omniauth-facebook'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

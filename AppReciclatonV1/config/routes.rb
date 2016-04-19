@@ -21,7 +21,8 @@ Rails.application.routes.draw do
   get '/camp_sens', to: 'home#camp_sens', as: :camp_sens
 
 
-  devise_for :clients, controllers: {sessions: 'sessions', registrations: 'registrations'} 
+  devise_for :clients, controllers: {sessions: 'sessions', registrations: 'registrations', :omniauth_callbacks => "clients/omniauth_callbacks"} 
+
 
   resources :clients
 
