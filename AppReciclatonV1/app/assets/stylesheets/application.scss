@@ -41,7 +41,9 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-size:12px;
   height: 100%;
+  color: white;
 }
+
 h1{
   font-size: 36px;
 }
@@ -270,8 +272,9 @@ li.navlogin  {
 .crazy-box p{
   line-height: 24px;
   text-align: justify;
-  color: darkblue;
+  color: white;
 }
+
 
 .estiloboton {
 
@@ -369,6 +372,15 @@ text-align: center;
   color:#888888;
   margin:0px;
   }
+
+
+  .servicios{
+  color: white;
+}
+
+.servicios h3{
+  color:white;
+}
   
 .w3-container {
     padding: 0.01em 16px;
@@ -439,7 +451,7 @@ text-align: center;
   padding-bottom:10px;
   -moz-background-size: cover;
   background-size: cover;
-  
+ 
 }
 
 .fa-4x {
@@ -461,6 +473,7 @@ text-align: center;
     width: 100%;
     bottom: 0;
     text-align: center;
+   
 }
 
 .final footer {
@@ -471,7 +484,7 @@ text-align: center;
 
 video { 
     position: fixed;
-    top: 71%;
+    top: 65%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -480,6 +493,14 @@ video {
     z-index: -100;
     opacity: 0.8;
     transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.contacto span {
+  color:white !important;
+}
+
+.contacto p {
+  color:white !important;
 }
