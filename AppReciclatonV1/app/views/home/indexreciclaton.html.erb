@@ -8,25 +8,27 @@
 </head>
 
 <body>
+
+
 <div class="contenedorindex">
       <header class="inicioapp">
       
     
 
               <div class="row">
-              <div class="w3-container  ">
-                <div class="col-sm-12 text-center">
-                  <div class="header-content">
+                <div class="w3-container  ">
+                  <div class="col-sm-12 text-center">
+                    <div class="header-content">
 
 
 
                     <h2>RECICLATÓN</h2>
-                    <h4>Su solución ambiental</h4>
-                    <a href="#being-a-liker" class="btn btn-primary btn-xl page-scroll">Quiero saber más</a>
-                  </div> </br>
+                      <h4>Su solución ambiental</h4>
+                        <a href="#being-a-liker" class="btn btn-primary btn-xl page-scroll">Quiero saber más</a>
+                    </div> </br>
 
 
-              <%= video_tag("earth.ogv", :controls => false, autoplay: true, loop: true) %>
+                      <%= video_tag("earth.ogv", :controls => false, autoplay: true, loop: true) %>
 
 
               <div class="uk-width-1-1">
@@ -81,7 +83,7 @@
                   </div>
                   <div class="col-lg-4">
                     <div class="service_block">
-                      <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-recycle"></i></span> </div>
+                      <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom"></i></span> </div>
                       <h3 class="animated fadeInUp wow">Recuperación y transformación de residuos</h3>
                       <p class="animated fadeInDown wow"></p>
                     </div>
@@ -105,91 +107,91 @@
 
 <div class="contenedorindex">
 <!--Crazy boxes-->
-<div class="container">
-      <div>
-        <div class="row">
+    <div class="container">
+        <div>
+          <div class="row">
 
-          <div class="col-md-6">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <%= image_tag 'PV.jpg', class: 'image-carousel' %>
+            <div class="col-md-6">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <%= image_tag 'PV.jpg', class: 'image-carousel' %>
+
+                    <div class="carousel-caption">
+                      <h1>Example headline.</h1>
+                      <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+
+
+                  </div>
+                  <div class="item">
+                    <%= image_tag 'TIP.jpg', class: 'image-carousel' %>
 
                   <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                  </div>
-
-
-                </div>
-                <div class="item">
-                  <%= image_tag 'TIP.jpg', class: 'image-carousel' %>
-
-                <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver galeria</a></p>
-                  </div>
-
-
-                </div>
-                <div class="item">
-                  <%= image_tag 'recycle-symbol.jpg', class: 'image-carousel' %>
-                
-                <div class="carousel-caption">
-                      <h1>Another example headline.</h1>
+                      <h1>One more for good measure.</h1>
                       <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
+                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver galeria</a></p>
                     </div>
-                
-                </div>
+
+
+                  </div>
+                  <div class="item">
+                    <%= image_tag 'recycle-symbol.jpg', class: 'image-carousel' %>
+                  
+                  <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
+                      </div>
+                  
+                  </div>
+
+                  </div>
 
                 </div>
-
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
               </div>
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
 
-          <div class="col-md-6">
-              <div class="separator">
-                <h3>Recicle tips</h3>
+            <div class="col-md-6">
+                <div class="separator">
+                  <h3>Recicle tips</h3>
+                </div>
+                
+                <section class="crazy-boxes">
+                  <div class="crazy-box box1">
+                    <p>¿Sabe usted que hacen con los residuos que usted recicla?</p>
+                  </div>
+
+                  <div class="crazy-box box2">
+                    <p>¿En el momento de reciclar un residuo sabe usted con seguridad donde depositarlo?</p>
+                  </div>
+
+                  <div class="crazy-box box3">
+                    <p>¿?</p>
               </div>
               
-              <section class="crazy-boxes">
-                <div class="crazy-box box1">
-                  <p>¿Sabe usted que hacen con los residuos que usted recicla?</p>
-                </div>
+          </section>
 
-                <div class="crazy-box box2">
-                  <p>¿En el momento de reciclar un residuo sabe usted con seguridad donde depositarlo?</p>
-                </div>
-
-                <div class="crazy-box box3">
-                  <p>¿?</p>
+              <div class="separator">
+                <span>Recicle inteligente y consciente</span>
+              </div>
             </div>
-            
-        </section>
-
-            <div class="separator">
-              <span>Recicle inteligente y consciente</span>
-            </div>
-          </div>
 
 
-      </div>
+        </div>
   </div>
 </div>
 
@@ -205,8 +207,8 @@
       <div id ="finreciclaton1" >
 
         <div class="row">
-          <div class="col-xs-3" id="finreciclaton2">
-              <p class="caja_neswa"><img src="<%=image_path('boletin.png')%>" alt="" style="float:left;margin-bottom: 5px;height:50%;width: 50%;">
+          <div class="col-xs-2" id="finreciclaton2">
+              <p class="caja_neswa"><img src="<%=image_path('boletin.png')%>" alt="" style="float:left;margin-bottom: 5px;height:50%;width: 100%;">
           </div><!-- #Fin suscripcion -->
 
           <div id ="finreciclaton2" class="col-xs-6">
@@ -236,7 +238,13 @@
                             <div class="control-label">
                               <label id="jform_cmc_groups_EMAIL-lbl" for="jform_cmc_groups_EMAIL" class="form-label cmc-label required">Escriba su correo electronico<span class="star">&nbsp;*</span></label></div>
                                 <div class="controls">
-                                  <input name="jform[cmc_groups][EMAIL]" id="jform_cmc_groups_EMAIL" value="" class="inputbox input-medium cmc_req validate-email required" placeholder="Email *" required="required" aria-required="true" type="email">
+                                  
+                                    <div class="input-group margin-bottom-sm">
+                                      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
+                                      <input name="jform[cmc_groups][EMAIL]" id="jform_cmc_groups_EMAIL" value="" class="inputbox input-medium cmc_req validate-email required" class="form-control" type="text" placeholder="Email address*" required="required" aria-required="true" type="email">
+                                    </div>
+
+
                                     <div class="help-inline alert alert-error cmc-exist hide">
                                       It seems that you have already subscribed to this list. <a href="/">Click here to update your profile.</a>
                                     </div>
@@ -280,7 +288,6 @@
                      
         </section>
 
-</div>
 
                       <div class="row">
                         <div class="container">
@@ -309,24 +316,24 @@
                         <!--fontawesome icons-->
                         
 
-                        <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
-                          <a  href="http://www.github.com" target="_blank" title="Github"><i class="fa fa-github fa-4x"></i>
-                        </div>
-                        <div class="col-sm-1 col-xs-4 text-center">
-                          <a  href="http://www.pinterest.com" target="_blank" title="Pinterest"><i class="fa fa-pinterest fa-4x"></i>
-                        </div>
-                        <div class="col-sm-1 col-xs-4 text-center">
-                          <a  href="http://www.googleplus.com" target="_blank" title="Googleplus"><i class="fa fa-google-plus fa-4x"></i>
-                        </div>
-                        <div class="col-sm-1 col-xs-4 text-center">
-                          <a  href="http://www.twitter.com" target="_blank" title="Twitter"> <i class="fa fa-twitter fa-4x"></i>
-                        </div>
-                        <div class="col-sm-1 col-xs-4 text-center">
-                            <a  href="http://www.youtube.com" target="_blank" title="Youtube"><i class="fa fa-youtube fa-4x"></i></a> 
-                        </div>
-                        <div class="col-sm-1 col-xs-4 text-center">
-                          <a  href="http://www.facebook.com" target="_blank" title="Facebook"><i class="fa fa-facebook fa-4x"></i></a>
-                        </div>
+                            <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
+                              <a  href="http://www.github.com" target="_blank" title="Github"><i class="fa fa-github fa-4x"></i>
+                            </div>
+                            <div class="col-sm-1 col-xs-4 text-center">
+                              <a  href="http://www.pinterest.com" target="_blank" title="Pinterest"><i class="fa fa-pinterest fa-4x"></i>
+                            </div>
+                            <div class="col-sm-1 col-xs-4 text-center">
+                              <a  href="http://www.googleplus.com" target="_blank" title="Googleplus"><i class="fa fa-google-plus fa-4x"></i>
+                            </div>
+                            <div class="col-sm-1 col-xs-4 text-center">
+                              <a  href="http://www.twitter.com" target="_blank" title="Twitter"> <i class="fa fa-twitter fa-4x"></i>
+                            </div>
+                            <div class="col-sm-1 col-xs-4 text-center">
+                                <a  href="http://www.youtube.com" target="_blank" title="Youtube"><i class="fa fa-youtube fa-4x"></i></a> 
+                            </div>
+                            <div class="col-sm-1 col-xs-4 text-center">
+                              <a  href="http://www.facebook.com" target="_blank" title="Facebook"><i class="fa fa-facebook fa-4x"></i></a>
+                            </div>
                         
                     
                         <br/>
@@ -334,8 +341,8 @@
 
                       
 
-                        Reciclatón Copyright &copy; 2016
-                      </section>
+                          Reciclatón Copyright &copy; 2016
+                        </section>
             
 
          
@@ -344,7 +351,7 @@
                 
 
 
-</div>
+
 
 </body>
 </html>

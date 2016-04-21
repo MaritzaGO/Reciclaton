@@ -99,7 +99,7 @@ background-repeat: no-repeat;
 }
 
 div.modal-content.login {
-  background-image: url(hierba.png) ; 
+  background-image: url(asset-path("hierba.png")) 
 }
 
 
@@ -183,7 +183,6 @@ body.home .bannerHome {
     position: relative;
     overflow: hidden;
     max-width: 60%;
-    text-align: center;
     margin: auto;
     color: white;
     /*height: 100%;*/
@@ -525,3 +524,20 @@ video {
 .contacto span {
   color:white !important;
 }
+
+/*Estadisticas reciclaje*/
+svg {
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+#graph{
+  margin: auto;
+}
+
+/*Fin estadisticas reciclaje*/
