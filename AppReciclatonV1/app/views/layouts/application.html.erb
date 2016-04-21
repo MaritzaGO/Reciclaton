@@ -103,7 +103,8 @@
           </div>
           <button type="submit" class="btn btn-default">Buscar!</button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
+
+                <ul class="nav navbar-nav navbar-right">
         
                   <% if client_signed_in? %>
                     <li>
@@ -122,8 +123,19 @@
                     </li>
               
                   <% end %>
-  
-          </ul>
+                </ul>
+
+                  <div class="dropdown navbar-right">
+                        <button class="btn btn-default dropdown-toggle navbar-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Lenguaje
+                            <span class="caret"></span>
+                        </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="<%= root_path(locale: 'en') %>">Ingles</a></li>
+                      <li><a href="<%= root_path(locale: 'es') %>">Espanol</a></li>
+                    </ul>
+                  </div>
+
+
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

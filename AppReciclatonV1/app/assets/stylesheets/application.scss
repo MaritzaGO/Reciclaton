@@ -177,6 +177,21 @@ body.home .bannerHome {
 ---------------------------------*/
 
 
+.contenedorindex{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+
+
+
 .navbar-header a {
   background-color: #006600;
   color: white;

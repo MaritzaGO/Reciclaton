@@ -24,6 +24,17 @@ class ApplicationController < ActionController::Base
    session[:previous_url] || new_post_path
 	end
 
+  
+  before_action :set_locale
+  
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+
+  def default_url_options(options = {})
+    { locale: I18n.locale }.merge options
+  end
+
   protected
 
   def configure_permitted_parameters
