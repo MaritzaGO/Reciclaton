@@ -252,6 +252,14 @@ li.navlogin  {
 	text-align: center;
 }
 
+.carousel-caption h1{
+
+}
+
+.carousel-caption p {
+
+}
+
 .image-carousel{
   display: inline !important;
   height: 325px;
@@ -387,6 +395,11 @@ text-align: center;
   color:#888888;
   margin:0px;
   }
+
+.service_area a {
+  color: white !important;
+  background-color: #003300;
+}
 
 
   .servicios{
@@ -541,3 +554,7 @@ svg {
 }
 
 /*Fin estadisticas reciclaje*/
+
+.estilonosotros {
+  color:white;
+}

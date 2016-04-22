@@ -24,7 +24,7 @@
 
                     <h2>RECICLATÓN</h2>
                       <h4>Su solución ambiental</h4>
-                        <a href="#being-a-liker" class="btn btn-primary btn-xl page-scroll">Quiero saber más</a>
+                        <a href="/nosotros" class="btn btn-primary btn-xl page-scroll">Quiero saber más</a>
                     </div> </br>
 
 
@@ -70,27 +70,43 @@
                         <div class="col-lg-8 col-lg-offset-2 text-center">
                       
                           <h2>Servicios</h2>
+
+                            <br/>
+                              <br/>
+
                         </div>
 
               <div class="service_area">
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="service_block">
-                      <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-ticket"></i></span> </div>
+                      <div class="service_icon delay-03s animated wow  zoomIn"> 
+                      <%= link_to compra_venta_path do %>
+                        <span><i class="fa fa-ticket"></i></span>
+                      <% end %>
+                       </div>
                       <h3 class="animated fadeInUp wow">Compra y venta de residuos</h3>
                       <p class="animated fadeInDown wow"></p>
                     </div>
                   </div>
                   <div class="col-lg-4">
                     <div class="service_block">
-                      <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom"></i></span> </div>
+                      <div class="service_icon icon2  delay-03s animated wow zoomIn"> 
+                      <%= link_to l_reciclaje_path do %>
+                        <span><i class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom"></i></span>
+                      <% end %>
+                      </div>
                       <h3 class="animated fadeInUp wow">Recuperación y transformación de residuos</h3>
                       <p class="animated fadeInDown wow"></p>
                     </div>
                   </div>
                   <div class="col-lg-4">
                     <div class="service_block">
-                      <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-graduation-cap"></i></span> </div>
+                      <div class="service_icon icon3  delay-03s animated wow zoomIn">
+                      <%= link_to camp_sens_path do %>
+                        <span><i class="fa fa-graduation-cap"></i></span> 
+                      <% end %>
+                      </div>
                       <h3 class="animated fadeInUp wow">Capacitación</h3>
                       <p class="animated fadeInDown wow"></p>
                     </div>
@@ -120,34 +136,34 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                    <%= image_tag 'PV.jpg', class: 'image-carousel' %>
+                    <%= image_tag 'nature1.png', class: 'image-carousel' %>
 
                     <div class="carousel-caption">
-                      <h1>Example headline.</h1>
-                      <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                      <h2>Quiero calcular mi huella de carbono para el planeta segun mi estilo de vida</h2>
+                      <p>Calcule su aporte al medio ambiente</p>
+                      <p><a class="btn btn-lg btn-primary" href="http://calculator.carbonfootprint.com/calculator.aspx?lang=es" role="button" target="_blank">Calcular ya</a></p>
                     </div>
 
 
                   </div>
                   <div class="item">
-                    <%= image_tag 'TIP.jpg', class: 'image-carousel' %>
+                    <%= image_tag 'nature2.png', class: 'image-carousel' %>
 
                   <div class="carousel-caption">
-                      <h1>One more for good measure.</h1>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver galeria</a></p>
+                      <h2>¿No sabes reciclar?</h2>
+                      <p>Aprenda a reciclar de una manera didáctica </p>
+                      <p><a class="btn btn-lg btn-primary" href="https://www.ecoembes.com/es/ciudadanos/envases-y-proceso-reciclaje/como-reciclar-bien" role="button" target="_blank">Quiero aprender</a></p>
                     </div>
 
 
                   </div>
                   <div class="item">
-                    <%= image_tag 'recycle-symbol.jpg', class: 'image-carousel' %>
+                    <%= image_tag 'nature3.png', class: 'image-carousel' %>
                   
                   <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
+                        <h2>Transforme materiales</h2>
+                        <p>¿Porque reciclar residuos?</p>
+                        <p><a class="btn btn-lg btn-primary" href="http://elreciclaje.org/" role="button" target="_blank">Leer mas</a></p>
                       </div>
                   
                   </div>
@@ -165,7 +181,7 @@
                   </a>
               </div>
 
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="separator">
                   <h3>Recicle tips</h3>
                 </div>
@@ -204,7 +220,7 @@
   <section id="finreciclaton">
     <div class="container">
       <!-- #suscripcion -->
-      <div id ="finreciclaton1" >
+     
 
         <div class="row">
           <div class="col-xs-2" id="finreciclaton2">
@@ -258,8 +274,7 @@
 
                             <input class="cmc_exist" name="jform[exists]" value="0" type="hidden">
                               <input name="b10b792eb214cdd2504eea55fe2432f6" value="1" type="hidden">
-                                <button class="btn btn-primary validate" type="submit">Suscribirse<img class="cmc-spinner" style="display: none;" 
-                                  src="" height="16" width="16">
+                                <button class="btn btn-primary validate" type="submit">Suscribirse<img class="cmc-spinner" style="display: none;"src="" height="16" width="16">
                                 </button>
                     </form>
 
@@ -267,6 +282,7 @@
               </div>
             </div>
           </div>
+
 
                         <div class="col-xs-3 contacto" id="finreciclaton2" >
                           
@@ -287,6 +303,7 @@
                   </div>
                      
         </section>
+      </div>
 
 
                       <div class="row">
