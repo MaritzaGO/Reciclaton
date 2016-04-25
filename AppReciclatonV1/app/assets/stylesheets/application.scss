@@ -268,7 +268,7 @@ li.navlogin  {
 
 .separator{
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   background: #FFCC00;
   color: #FF0000;
   text-transform: uppercase;
@@ -276,6 +276,7 @@ li.navlogin  {
   text-shadow: 1px 1px 1px #000;
   h3{
   	margin-top: 0;
+    size: 15px;
   }
 }
 
@@ -309,7 +310,8 @@ text-align: center;
 }
 
 .estilonosotros  p {
-  text-justify: center
+  text-justify: center;
+  text-align: justify;
 }
 
 .search {
@@ -402,7 +404,7 @@ text-align: center;
 }
 
 
-  .servicios{
+.servicios{
   color: white;
 }
 
@@ -426,7 +428,6 @@ text-align: center;
     color: #000 !important;
     background-color: #e7ffe7 !important;
 }
-
 
 
 /*Fin Log_in personalizado */
