@@ -129,16 +129,18 @@ div.modal-content.login {
     margin-bottom: 20px;
 }
 
-.inicioapp h2 {
+.inicioapp h1 {
  color: white;
 }
 
-.inicioapp h4 {
+.inicioapp h3 {
  color: white !important;
 }
 
 .inicioapp a {
- color: white !important;
+  color: white !important;
+  line-height: 8px;
+  border-color: white;
 }
 
 
@@ -193,6 +195,7 @@ body.home .bannerHome {
     max-width: 60%;
     margin: auto;
     color: white;
+    font-size: large;
     /*height: 100%;*/
     /*width: 100%;*/
 }
@@ -272,12 +275,14 @@ li.navlogin  {
 	text-align: center;
 }
 
-.carousel-caption h1{
-
+.carousel-caption p{
+font-size: medium !important;
 }
 
-.carousel-caption p {
-
+.carousel-caption a {
+  color: white !important;
+  line-height: 8px;
+  border-color: white;
 }
 
 .image-carousel{
@@ -289,14 +294,15 @@ li.navlogin  {
 .separator{
   text-align: center;
   line-height: 40px;
-  background: #FFCC00;
+  background: #FDFD96;
   color: #FF0000;
   text-transform: uppercase;
   box-shadow: inset 0px 0px 3px 2px #0B3E68;
   text-shadow: 1px 1px 1px #000;
+  font-size: large;
   h3{
   	margin-top: 0;
-    size: 15px;
+    size: 10px;
   }
 }
 
@@ -309,7 +315,7 @@ li.navlogin  {
   background: rgba(0, 80, 255, 0.26);
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 1px 2px 3px 0px #626262;
+  box-shadow: 1px 2px 3px 0px #779ECB;
   margin-bottom: 20px;
 }
 
@@ -586,7 +592,8 @@ svg {
   background-size: cover;
   -o-background-size: cover;
   position: relative;
-    
+  top:-18px;
+  font-size: medium;
   
   /*max-height: 1500px;
   height: expression(document.body.clientHeight > 1501? "1500px": "auto");*/
@@ -605,5 +612,6 @@ svg {
 }
 
 
-/* Para alinear en dos columnas<div class="col-lg-12 col-lg-offset-10 text-center"></div>*/
+/* Para alinear en dos columnas<div class="col-lg-12 col-lg-offset-10 text-center"></div>
+Ingresos: plan premium, publicidad*/
 
